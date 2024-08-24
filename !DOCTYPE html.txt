@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Custom Browser App</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:wght@700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+            <div id="date-time"></div>
+            <button id="toggle-night-mode">Night Mode</button>
+        </div>
+        <div class="main-content">
+            <h1 class="search-label">Search X</h1>
+            <input type="text" id="search-query" placeholder="Type your search here...">
+            <button id="google-search">Search</button>
+            <div class="apps">
+                <div class="app-icon">
+                    <a href="https://www.instagram.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/a/a5/Instagram_icon.png" alt="Instagram">
+                    </a>
+                    <span class="app-name">Instagram</span>
+                </div>
+                <div class="app-icon">
+                    <a href="https://www.facebook.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/5/51/Facebook_f_logo_%282019%29.svg" alt="Facebook">
+                    </a>
+                    <span class="app-name">Facebook</span>
+                </div>
+                <div class="app-icon">
+                    <a href="https://www.whatsapp.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" alt="WhatsApp">
+                    </a>
+                    <span class="app-name">WhatsApp</span>
+                </div>
+                <div class="app-icon">
+                    <a href="https://www.spotify.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/2/26/Spotify_logo_with_text.svg" alt="Spotify">
+                    </a>
+                    <span class="app-name">Spotify</span>
+                </div>
+                <div class="app-icon">
+                    <a href="https://chat.openai.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/0/04/ChatGPT_logo.svg" alt="ChatGPT">
+                    </a>
+                    <span class="app-name">ChatGPT</span>
+                </div>
+                <div class="app-icon">
+                    <a href="https://github.com" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/9/91/Octicons-mark-github.svg" alt="GitHub">
+                    </a>
+                    <span class="app-name">GitHub</span>
+                </div>
+                <div class="app-icon">
+                    <a href="https://telegram.org" target="_blank">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/8/82/Telegram_logo.svg" alt="Telegram">
+                    </a>
+                    <span class="app-name">Telegram</span>
+                </div>
+            </div>
+        </div>
+        <div class="sidebar-right">
+            <div id="data-usage">Data Used Today: 0MB</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

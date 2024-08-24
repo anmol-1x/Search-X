@@ -1,0 +1,132 @@
+/* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    height: 100vh;
+    background-image: url('https://your-background-image-url-here'); /* Add your background image URL */
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+}
+
+.sidebar, .sidebar-right {
+    width: 20%;
+    background-color: rgba(51, 51, 51, 0.8); /* Transparent black */
+    color: white;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.sidebar {
+    align-items: flex-start;
+}
+
+.sidebar-right {
+    align-items: flex-end;
+}
+
+.main-content {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(255, 255, 255, 0.8); /* Transparent white */
+    color: #000;
+    border-radius: 10px;
+    padding: 20px;
+}
+
+.search-label {
+    font-family: 'EB Garamond', serif; /* Britannica-like font */
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+button, #search-query {
+    margin: 10px;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: none;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    background-color: #4285F4;
+    color: white;
+}
+
+button:hover, #search-query:hover {
+    cursor: pointer;
+    background-color: #444;
+    color: #fff;
+}
+
+#search-query {
+    width: 80%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.apps {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.app-icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.app-icon img {
+    width: 2cm;
+    height: 2cm;
+    object-fit: contain;
+}
+
+.app-name {
+    margin-top: 5px;
+    font-size: 14px;
+    color: #000;
+}
+
+.night-mode .app-name {
+    color: #bdbdbd;
+}
+
+.night-mode {
+    background-color: #121212;
+    color: #bdbdbd;
+}
+
+.night-mode .main-content {
+    background-color: rgba(30, 30, 30, 0.8); /* Transparent dark */
+    color: #bdbdbd;
+}
+
+.night-mode .app-icon img {
+    filter: none; /* Ensure the app icons do not change color */
+}
+
+.night-mode #search-query {
+    background-color: #333;
+    color: #fff;
+}

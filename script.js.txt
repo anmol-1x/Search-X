@@ -1,0 +1,32 @@
+// script.js
+
+// Display current date and time
+function updateDateTime() {
+    const now = new Date();
+    const dateTime = now.toLocaleString();
+    document.getElementById('date-time').innerText = dateTime;
+}
+
+setInterval(updateDateTime, 1000);
+updateDateTime();
+
+// Toggle Night Mode
+const toggleNightModeBtn = document.getElementById('toggle-night-mode');
+toggleNightModeBtn.addEventListener('click', () => {
+    document.body.classList.toggle('night-mode');
+});
+
+// Placeholder for Data Used Today feature
+let dataUsedToday = 0; // In MB
+document.getElementById('data-usage').innerText = `Data Used Today: ${dataUsedToday}MB`;
+
+// Google Search Button Functionality
+const googleSearchBtn = document.getElementById('google-search');
+googleSearchBtn.addEventListener('click', () => {
+    const query = document.getElementById('search-query').value.trim();
+    if (query) {
+        window.open(`https://www.google.com/search?q=${query}`, '_blank');
+    } else {
+        alert("Please enter a search query.");
+    }
+});
